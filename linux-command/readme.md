@@ -3,9 +3,8 @@
 
 ### connect server with terminal
 ```shell
-ssh []username]@[ip_address]
+ssh -i [private_key] [username]@[ip_address]
 ```
-  * [Permission Deny](https://stackoverflow.com/a/52988125/12819402): **need to set in remote server**
 
 ### common linux command
 > [101 Bash Command and Tips for Beginner to Experts](https://dev.to/awwsmm/101-bash-commands-and-tips-for-beginners-to-experts-30je#the-basics)
@@ -87,6 +86,9 @@ permissions:
 * w(write): 2
 * x(execute): 1
 * no permission: 0
+* rwx=4+2+1=7
+
+directory: no `x` permission, go into directory will tip permission denied
 
 execute a file:
 * first own execute permission
