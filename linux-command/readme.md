@@ -88,6 +88,16 @@ permissions:
 * no permission: 0
 * rwx=4+2+1=7
 
+[Symbolic(Text) Method](https://linuxize.com/post/understanding-linux-file-permissions/#symbolic-text-method):
+```shell
+chmod u=rwx,g=r,o= filename
+```
+
+[Numeric Method:](https://linuxize.com/post/understanding-linux-file-permissions/#numeric-method)
+```shell
+chmod 644 dirname
+```
+
 directory: no `x` permission, go into directory will tip permission denied
 
 execute a file:
