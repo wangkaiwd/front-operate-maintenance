@@ -57,7 +57,7 @@ echo $PATCH
   * root: username list of group
 
 ### file permission
-> (Understanding Linux File Permission)[https://linuxize.com/post/understanding-linux-file-permissions/]
+> [Understanding Linux File Permission](https://linuxize.com/post/understanding-linux-file-permissions/)
 
 ```shell
 ls -l
