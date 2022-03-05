@@ -32,7 +32,7 @@ tar -zxvf book.tar.gz book
 ```
 * gzip can only compress files, not directory
 * tar can create new archive from specified items, it without compression feature
-* xxx.tar.gz: first gzip the tar
+* xxx.tar.gz: first gzip then tar
 
 look file(large file):
 * cat
