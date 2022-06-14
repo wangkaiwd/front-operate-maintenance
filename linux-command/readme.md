@@ -1,12 +1,10 @@
 ## linux
 
-* [buy server](https://cn.aliyun.com/)
+### move cursor
 
-### connect server with terminal
-
-```shell
-ssh -i [private_key] [username]@[ip_address]
-```
+* ctrl + a: move cursor to start of line
+* ctrl + e: move cursor to end of line
+* ctrl + u: delete line where cursor at
 
 ### common linux command
 
@@ -55,6 +53,7 @@ head -6 report.html | tail -3
 ```
 
 Disk Usage, Processes:
+
 * df
 * du
 * ps
@@ -63,6 +62,21 @@ Disk Usage, Processes:
 #### environment variables
 
 echo $PATCH
+
+immediately work after change environment variables config file:
+
+* source `configFile`
+* . `configFile`
+
+environment variable config files:
+
+* `/etc/profile`
+* `/etc/bashrc`
+* `~/.bash_profile`
+* `~/.bashrc`
+
+read files content which listed above
+
 
 #### user and user group
 
@@ -126,3 +140,9 @@ execute a file:
 
 * first own execute permission
 * `./2.txt`, `sh ./2.txt` (file content: `echo hello`)
+
+### Operator
+
+* declare
+* set
+* export
