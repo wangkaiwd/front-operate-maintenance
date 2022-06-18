@@ -57,6 +57,7 @@ Disk Usage, Processes:
 * df
 * du
 * ps
+* top
 * kill
 
 #### environment variables
@@ -76,7 +77,6 @@ environment variable config files:
 * `~/.bashrc`
 
 read files content which listed above
-
 
 #### user and user group
 
@@ -146,3 +146,22 @@ execute a file:
 * declare
 * set
 * export
+
+### some
+
+* awk
+* sed
+* sort
+
+timed task:
+
+* crontab
+
+### service
+
+* RPM
+* source
+
+packet manager
+* yum
+
