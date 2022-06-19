@@ -1,5 +1,7 @@
 ## linux
 
+* [linux documentation](https://linux.die.net/)
+
 ### move cursor
 
 * ctrl + a: move cursor to start of line
@@ -163,5 +165,6 @@ timed task:
 * source
 
 packet manager
+
 * yum
 
