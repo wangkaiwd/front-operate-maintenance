@@ -1,6 +1,7 @@
 ## linux
 
 * [linux documentation](https://linux.die.net/)
+* [linux directory structure](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard#Directory_structure)
 
 ### move cursor
 
