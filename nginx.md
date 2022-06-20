@@ -4,7 +4,7 @@
 
 ### Install Nginx
 
-* [Installation nginx]
+* [Installation nginx](https://nginx.org/en/docs/install.html)
   * [RHEL/Centos](https://nginx.org/en/linux_packages.html#RHEL-CentOS)
   * [macos](https://www.javatpoint.com/installing-nginx-on-mac): brew install nginx
 * [install nginx throw error](https://superuser.com/questions/571871/sudo-yum-install-nginx-throws-cannot-retrieve-repository-metadata-repomd-xml)
@@ -26,5 +26,53 @@ look nginx config file and relative folders:
 rpm -ql nginx
 ```
 
+### Location
+
+> [location](https://nginx.org/en/docs/http/ngx_http_core_module.html#location)
+
+* none: prefix string, location with the longest matching prefix is selected and remembered
+* `~` modifier: for case-sensitive matching
+* `~*` modifier: for case-insensitive matching
+* `^~` modifier: If the longest matching prefix location has the `^~` modifier then regular expression are not checked
+* `=` modifier: define an exact match of URI and location and the search terminates.
+
+Illustrate the about by an example:
+
+```text
+location = / {
+    [ configuration A ]
+}
+
+# prefix location
+location / {
+    [ configuration B ]
+}
+
+location /documents/ {
+    [ configuration C ]
+}
+
+location ^~ /images/ {
+    [ configuration D ]
+}
+
+location ~* \.(gif|jpg|jpeg)$ {
+    [ configuration E ]
+}
+```
+
+* `/` : A
+* `index.html`: B
+* `/documents/document.html`: C
+* `/images/1.gif`:  D
+* `/documents/1.jpg`: E
+
+match order:
+
+1. Checks locations defined using the prefix strings(prefix locations)
+2. Among them, the location with the longest matching prefix is selected and remembered
+3. Then regular expression are checked, in the order of their appearance in the configuration file
+4. The search of regular expression terminates on the first match, and corresponding configuration is used
+5. If no match with a regular expression is found then configuration of the prefix location remembered earlier is used
 
 
