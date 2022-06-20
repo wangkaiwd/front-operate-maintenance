@@ -2,7 +2,6 @@
 
 * tag(version control)
   * release-it
-  * 
 * rollback
 
 server:
