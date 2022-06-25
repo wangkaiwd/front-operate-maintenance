@@ -6,6 +6,7 @@
 
 * [Installation nginx](https://nginx.org/en/docs/install.html)
   * [RHEL/Centos](https://nginx.org/en/linux_packages.html#RHEL-CentOS)
+  * [Official Red Hat/CentOS packages](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/)
   * [macos](https://www.javatpoint.com/installing-nginx-on-mac): brew install nginx
 * [install nginx throw error](https://superuser.com/questions/571871/sudo-yum-install-nginx-throws-cannot-retrieve-repository-metadata-repomd-xml)
   ![](https://cdn.jsdelivr.net/gh/wangkaiwd/drawing-bed/202206191157334.png)
