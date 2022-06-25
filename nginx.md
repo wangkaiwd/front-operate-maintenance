@@ -75,4 +75,8 @@ match order:
 4. The search of regular expression terminates on the first match, and corresponding configuration is used
 5. If no match with a regular expression is found then configuration of the prefix location remembered earlier is used
 
+### Split nginx log
 
+* nginx logrotate
+* crontab: write shell script custom this logic
+* pm2-logrotate
