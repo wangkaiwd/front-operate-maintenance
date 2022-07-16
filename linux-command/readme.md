@@ -67,7 +67,7 @@ Disk Usage, Processes:
 
 #### environment variables
 
-echo $PATCH
+echo $PATH
 
 immediately work after change environment variables config file:
 
