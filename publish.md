@@ -7,7 +7,7 @@
 server:
 
 1. connect server by `github` action
-2. git latest code by tag
+2. get latest code by tag
 3. start project
 
 rollback:
