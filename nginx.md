@@ -21,7 +21,7 @@ nginx -V:
 
 * [Building nginx from sources](https://nginx.org/en/docs/configure.html)
 
-look nginx config file and relative folders:
+look nginx config file and related folders:
 
 ```shell
 rpm -ql nginx
