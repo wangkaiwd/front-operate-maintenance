@@ -67,21 +67,54 @@ Disk Usage, Processes:
 
 #### environment variables
 
-echo $PATCH
+> * [How to Set and List Environment Variables in Linux](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/)
+> * [Shell initialization files](https://linux.die.net/Bash-Beginners-Guide/sect_03_01.html)
+> * [Variables](https://linux.die.net/Bash-Beginners-Guide/sect_03_02.html)
 
-immediately work after change environment variables config file:
-
-* source `configFile`
-* . `configFile`
-
-environment variable config files:
+Shell initialization files:
 
 * `/etc/profile`
 * `/etc/bashrc`
 * `~/.bash_profile`
 * `~/.bashrc`
 
-read files content which listed above
+When invoked interactively with the `--login` option or when invoked as `sh`, Bash reads the `/etc/profile` instructions. These usually set the shell variables `PATH,USER,HOSTNAME` and `HISTSIZE`
+
+types of variables: 
+* shell(local) variable
+* environment(global) variable
+
+set shell variable: 
+```bash
+foo='abc'
+```
+
+display shell variable:
+```bash
+echo $foo
+set | grep foo
+```
+
+set environment variable in the current session:
+```bash
+export FOO='abc'
+printenv FOO
+echo $FOO
+```
+
+persistent environment variables:
+
+```bash
+vim ~/.bashrc
+export FOO='abc'
+. ~/.bashrc
+```
+
+note: Don't forget applying changes to your own environment and setting variables in the current shell.
+```bash
+. ~/.bashrc
+# or source ~/.bashrc
+```
 
 #### user and user group
 
