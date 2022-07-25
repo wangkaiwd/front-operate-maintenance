@@ -81,8 +81,8 @@ Shell initialization files:
 When invoked interactively with the `--login` option or when invoked as `sh`, Bash reads the `/etc/profile` instructions. These usually set the shell variables `PATH,USER,HOSTNAME` and `HISTSIZE`
 
 types of variables: 
-* shell(local) variable
-* environment(global) variable
+* shell(local) variable: only avaiable in current shell
+* environment(global) variable: pass variables to subshell
 
 set shell variable: 
 ```bash
